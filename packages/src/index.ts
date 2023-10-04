@@ -1,6 +1,6 @@
 import * as ethers from 'ethers';
-import { createAztecRpcClient, getSandboxAccountsWallets, Contract } from '@aztec/aztec.js';
-import { deployContract } from './utils/l1_contracts.mjs';
+import { createPXEClient, getSandboxAccountsWallets, Contract } from '@aztec/aztec.js';
+import { deployContract } from './utils/l1_contracts.js';
 import TokenBridgeContractAbi from '../aztec-contracts/token_bridge/target/TokenBridge.json' assert { type: "json" };
 
 const { SANDBOX_URL = 'http://localhost:8080' } = process.env;
@@ -13,7 +13,7 @@ async function main() {
     console.log(`deployed to ${tokenPortal.address}`);
 
 
-    const client = createAztecRpcClient(SANDBOX_URL);
+    const client = createPXEClient(SANDBOX_URL);
     const [ownerWallet] = await getSandboxAccountsWallets(client);
     const ownerAddress = ownerWallet.getAddress();
     console.log("owner address", ownerAddress.toString());
