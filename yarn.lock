@@ -12,39 +12,26 @@
   resolved "https://registry.npmjs.org/@adraffy/ens-normalize/-/ens-normalize-1.9.4.tgz#aae21cb858bbb0411949d5b7b3051f4209043f62"
   integrity sha512-UK0bHA7hh9cR39V+4gl2/NnBBjoXIxkuWAPCaY4X7fbH4L/azIi7ilWOCjMUYfpJgraLUAqkRi2BqrjME8Rynw==
 
-"@aztec/aztec.js@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.npmjs.org/@aztec/aztec.js/-/aztec.js-0.7.10.tgz#c0e8f55e4bd72aaab06b1528fb958d63699f2e95"
-  integrity sha512-As42AC9uzqhKazTD4N0Ns0hq4Vq/GQHTMrvDExufaetnqoVx/z3DLDkFWMa2sigojzL3OzdYoRFmd3p9rDUPPQ==
+"@aztec/aztec.js@0.8.7", "@aztec/aztec.js@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/aztec.js/-/aztec.js-0.8.7.tgz#6f5b688eb1d43cb556b854ace5dd39599b29d54f"
+  integrity sha512-neB9N/6r3VF0bK5MCxAQCPy7aRAjHnOO/BYTXMRQKQsIXtkHfnSGxQyFIBCkXr3gsBpqaV9dTvErLt7ZRZOtSA==
   dependencies:
-    "@aztec/circuits.js" "0.7.10"
-    "@aztec/foundation" "0.7.10"
-    "@aztec/types" "0.7.10"
+    "@aztec/circuits.js" "0.8.7"
+    "@aztec/ethereum" "0.8.7"
+    "@aztec/foundation" "0.8.7"
+    "@aztec/types" "0.8.7"
     lodash.every "^4.6.0"
     lodash.partition "^4.6.0"
     lodash.zip "^4.2.0"
     tslib "^2.4.0"
 
-"@aztec/aztec.js@^0.8.4":
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/@aztec/aztec.js/-/aztec.js-0.8.5.tgz#94b93e620bb7c726dd8dd3fd53970fe696c79a4e"
-  integrity sha512-O74F0bq7awd8HEbAp/FE1Z3dj4za5PIAj6nH15qGIPOHUttUvLhnhiqG72onBblyIcQa4UkuaVy1km/o7YaM+Q==
+"@aztec/circuits.js@0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/circuits.js/-/circuits.js-0.8.7.tgz#c0520c8dccd6bf9a7bf012f6da891fa33dae1fc8"
+  integrity sha512-UMwMeO1qcOMauiCuNxL2cYvANDuCRERm5zVl3E7SnW9vcMl5SGBhD2xW5vHk740DH2bMRFf8keaPgZ6O1m/qeg==
   dependencies:
-    "@aztec/circuits.js" "0.8.5"
-    "@aztec/ethereum" "0.8.5"
-    "@aztec/foundation" "0.8.5"
-    "@aztec/types" "0.8.5"
-    lodash.every "^4.6.0"
-    lodash.partition "^4.6.0"
-    lodash.zip "^4.2.0"
-    tslib "^2.4.0"
-
-"@aztec/circuits.js@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.npmjs.org/@aztec/circuits.js/-/circuits.js-0.7.10.tgz#bc95c0ceda9905891b92aa5148e05756c68c8b9a"
-  integrity sha512-ab66yWV8oL0vA2gKySgMChO+6bzW6r99Zrde5UhDgKTrDZ4wkxcsEYWykXzq2EsVEb7gS4y3ZEwDBDDJGpilnw==
-  dependencies:
-    "@aztec/foundation" "0.7.10"
+    "@aztec/foundation" "0.8.7"
     "@msgpack/msgpack" "^3.0.0-beta2"
     "@noble/curves" "^1.0.0"
     "@types/lodash.camelcase" "^4.3.7"
@@ -59,60 +46,20 @@
     lodash.times "^4.3.2"
     tslib "^2.4.0"
 
-"@aztec/circuits.js@0.8.5":
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/@aztec/circuits.js/-/circuits.js-0.8.5.tgz#60c6bf35c71747039eb91664199d13d18d7d2055"
-  integrity sha512-Y8Yn2xQCXa24dweOeNHU6ZDT43wEy3fAjrchswGrkdalTRo7IKTF6MhrovOUoNvytq9CuGzDAWf0i6OSW4g5sw==
+"@aztec/ethereum@0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/ethereum/-/ethereum-0.8.7.tgz#0c0ba98c2478323d550a9882e975a01be781dd34"
+  integrity sha512-mCT3VaT8Tg5RSxS667d/73S+lHYft0NCS4CvKLNEtChZJvwcnBSIZwFy0YptaXcQYDsYgGHNsKPT/v/kDiyetw==
   dependencies:
-    "@aztec/foundation" "0.8.5"
-    "@msgpack/msgpack" "^3.0.0-beta2"
-    "@noble/curves" "^1.0.0"
-    "@types/lodash.camelcase" "^4.3.7"
-    "@types/lodash.times" "^4.3.7"
-    cross-fetch "^3.1.5"
-    detect-node "^2.1.0"
-    eslint "^8.35.0"
-    lodash.capitalize "^4.2.1"
-    lodash.chunk "^4.2.0"
-    lodash.mapvalues "^4.6.0"
-    lodash.snakecase "^4.1.1"
-    lodash.times "^4.3.2"
-    tslib "^2.4.0"
-
-"@aztec/ethereum@0.8.5":
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/@aztec/ethereum/-/ethereum-0.8.5.tgz#c9d98b46ab60e506d2fd16d769b53cf17a7ad31b"
-  integrity sha512-JfHIHf5AKNjqUv3KO7wUy2hSR1XpCX+Ci0zrS4GQL/KCa/wyRYTC95cZFso5gQsXXEwKbwSo0v+pooUUl19r4A==
-  dependencies:
-    "@aztec/foundation" "0.8.5"
+    "@aztec/foundation" "0.8.7"
     dotenv "^16.0.3"
     tslib "^2.4.0"
     viem "^1.2.5"
 
-"@aztec/foundation@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.npmjs.org/@aztec/foundation/-/foundation-0.7.10.tgz#d8c4c9c3acc45e1ca89c479502d3228a2e6ab2b0"
-  integrity sha512-q9hJqejCnMC+40MhBzgBES2TntAVuHuNm7sLelqDcMk66/zhEHKL9YWzsh/BO5slHwBhomE0LCtqJ8lMO/o1+A==
-  dependencies:
-    "@koa/cors" "^4.0.0"
-    debug "^4.3.4"
-    detect-node "^2.1.0"
-    hash.js "^1.1.7"
-    koa "^2.14.1"
-    koa-bodyparser "^4.4.0"
-    koa-compress "^5.1.0"
-    koa-router "^12.0.0"
-    leveldown "^6.1.1"
-    levelup "^5.1.1"
-    lodash.clonedeepwith "^4.5.0"
-    memdown "^6.1.1"
-    pako "^2.1.0"
-    sha3 "^2.1.4"
-
-"@aztec/foundation@0.8.5", "@aztec/foundation@^0.8.4":
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/@aztec/foundation/-/foundation-0.8.5.tgz#088989e9f82b6510a7daf23ed196ae2c6d7c9bf6"
-  integrity sha512-CK0wK57CFEePPmgU1Z4yTIm78aynVEI5OaOH86CqYt6Ud/gcPv3xYfJ6Yda0kcd7/NqHO3ImDwZk1iLffB5uvw==
+"@aztec/foundation@0.8.7", "@aztec/foundation@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/foundation/-/foundation-0.8.7.tgz#25db0a04f2ea5dc06eee6d2461c14bed19ad9a57"
+  integrity sha512-+1znt5Zkrykcibyoad6FoJXiIVfRSBT9MJ4xojkk9uy7rMVQfRxopp3z10OE7GlmRahRBt/sETPXjfKUAoQ89g==
   dependencies:
     "@koa/cors" "^4.0.0"
     debug "^4.3.4"
@@ -129,36 +76,24 @@
     pako "^2.1.0"
     sha3 "^2.1.4"
 
-"@aztec/noir-contracts@^0.7.10":
-  version "0.7.10"
-  resolved "https://registry.npmjs.org/@aztec/noir-contracts/-/noir-contracts-0.7.10.tgz#547af49087054b4f7650c1c8eed84054f652a34a"
-  integrity sha512-4eEShU8Ag9FANPXCXgBdOu6UxfZWQKzhlSiy7DfVRs4s/3DacsaHzN8nCZNPWPyz/NEhcadYQ08lDmt2YHmc5g==
+"@aztec/noir-contracts@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/noir-contracts/-/noir-contracts-0.8.7.tgz#3981853b18b57204e8d800e0083586cff48ad16f"
+  integrity sha512-G2RyecBSHltU9GjX3h/LY0qfXMf/z2n6/DmAMkiTpI6TO0hrr1jJ6N1CnMOx64W1lEAMDUab0QtM4yr/F+UGnQ==
   dependencies:
-    "@aztec/aztec.js" "0.7.10"
-    "@aztec/foundation" "0.7.10"
+    "@aztec/aztec.js" "0.8.7"
+    "@aztec/foundation" "0.8.7"
     lodash.omit "^4.5.0"
     tslib "^2.4.0"
 
-"@aztec/types@0.7.10":
-  version "0.7.10"
-  resolved "https://registry.npmjs.org/@aztec/types/-/types-0.7.10.tgz#75b718d2d9a23ea1e8c6b7a95f0f3c8411a7ba0b"
-  integrity sha512-AWYpYWEADogl7C16caDrjuFUyIdgowrViXEdbA4/uJ2m7VGWM3R4ZWgLa1aqtpcCHh2qgyy4cbehYDEZEZMxCg==
+"@aztec/types@0.8.7", "@aztec/types@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.npmjs.org/@aztec/types/-/types-0.8.7.tgz#a97fcb4460d148e4a9fea0c235b87f9aa6ae6e30"
+  integrity sha512-siNTogk73YZYugiOprJCgiZO2OVIEHxtMD5+5TXy1AcG4pMAhS9Mu1ITALq9gglwtByfudmspovTnjjJ2qJTzg==
   dependencies:
-    "@aztec/circuits.js" "0.7.10"
-    "@aztec/foundation" "0.7.10"
-    browserify-cipher "^1.0.1"
-    lodash.clonedeep "^4.5.0"
-    lodash.times "^4.3.2"
-    tslib "^2.5.0"
-
-"@aztec/types@0.8.5", "@aztec/types@^0.8.4":
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/@aztec/types/-/types-0.8.5.tgz#efcf52d42ec4b0bc4161c5f019deab421900d05b"
-  integrity sha512-6MiYc4RA9RJoVNufajKajMhv4+/x3oyV+OekmptamGijQiJySabwZywrxQEzmWRs3CUEXY13+TUuQlZ/eeg6NA==
-  dependencies:
-    "@aztec/circuits.js" "0.8.5"
-    "@aztec/ethereum" "0.8.5"
-    "@aztec/foundation" "0.8.5"
+    "@aztec/circuits.js" "0.8.7"
+    "@aztec/ethereum" "0.8.7"
+    "@aztec/foundation" "0.8.7"
     browserify-cipher "^1.0.1"
     lodash.clonedeep "^4.5.0"
     lodash.isequal "^4.5.0"
@@ -3353,7 +3288,7 @@ koa-router@^12.0.0:
     methods "^1.1.2"
     path-to-regexp "^6.2.1"
 
-koa@^2.14.1, koa@^2.14.2:
+koa@^2.14.2:
   version "2.14.2"
   resolved "https://registry.npmjs.org/koa/-/koa-2.14.2.tgz#a57f925c03931c2b4d94b19d2ebf76d3244863fc"
   integrity sha512-VFI2bpJaodz6P7x2uyLiX6RLYpZmOJqNmoCst/Yyd7hQlszyPwG/I9CQJ63nOtKSxpt5M7NH67V6nJL2BwCl7g==
