@@ -9,7 +9,7 @@
     "build": "yarn clean && tsc -b",
     "build:dev": "tsc -b --watch",
     "clean": "rm -rf ./dest tsconfig.tsbuildinfo",
-    "start": "yarn build && node ./dest/src/utils/aztec_contracts.js"
+    "start": "yarn build && node ./dest/src/index.js"
   },
     "workspaces": [
       "packages/*"
