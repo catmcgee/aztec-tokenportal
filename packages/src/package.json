@@ -1,0 +1,12 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@aztec/aztec.js": "^0.7.10",
+    "@aztec/noir-contracts": "^0.7.10",
+    "ethers": "^5.7"
+  }
+}
