@@ -9,9 +9,7 @@ const PATH_TO_CONTRACTS_RELATIVE = "./packages/l1-contracts/artifacts/contracts"
 const EXT = ".sol"
 
 function pathToArtifact(contractName: string) {
-    // Generate the relative path first
     const relativePath = `${PATH_TO_CONTRACTS_RELATIVE}/${contractName}${EXT}/${contractName}.json`;
-    // Now resolve it against the project root directory to get the absolute path
     const absolutePath = path.resolve(ROOT, relativePath);
     
     return absolutePath;
@@ -19,7 +17,7 @@ function pathToArtifact(contractName: string) {
 
 export async function deployContract(signer: Signer, contractName: string, ...args: any[]) {
     const absoluteArtifactPath = pathToArtifact(contractName);
-    const artifact = JSON.parse(fs.readFileSync(absoluteArtifactPath, 'utf-8')); // Use 'utf-8' to return a string directly
+    const artifact = JSON.parse(fs.readFileSync(absoluteArtifactPath, 'utf-8')); 
     const contract = new ethers.ContractFactory(artifact.abi, artifact.bytecode, signer);
     
     return await contract.deploy(...args);
