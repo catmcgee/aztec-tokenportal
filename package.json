@@ -11,7 +11,28 @@
     "clean": "rm -rf ./dest tsconfig.tsbuildinfo",
     "start": "yarn build && node ./dest/src/index.js"
   },
-    "workspaces": [
-      "packages/*"
-    ]
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "@fastify/busboy": "^3.2.2",
+    "adm-zip": "^0.6.1",
+    "undici": "^6.28.1",
+    "**/@eslint/eslintrc/js-yaml": "^4.3.2",
+    "**/eslint/js-yaml": "^4.3.2",
+    "**/mocha/js-yaml": "^4.3.2",
+    "nanoid": "^3.3.18",
+    "**/@ethersproject/providers/ws": "^7.5.11",
+    "**/viem/ws": "^8.21.0",
+    "tmp": "^0.2.6",
+    "serialize-javascript": "^7.0.5",
+    "uuid": "^11.1.1",
+    "**/mocha/minimatch": "^5.1.8",
+    "**/ethjs-unit/bn.js": "^4.12.3",
+    "**/number-to-bn/bn.js": "^4.12.3",
+    "**/mocha/diff": "^5.2.2",
+    "elliptic": "^6.6.1",
+    "cookie": "^0.7.0",
+    "@koa/cors": "^5.0.0"
+  }
 }
